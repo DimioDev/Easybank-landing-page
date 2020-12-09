@@ -1,0 +1,485 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.btn-light,
+.btn-footer {
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+.btn-light:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-footer:hover {
+  cursor: pointer;
+  filter: brightness(130%) contrast(80%);
+  transition: all 0.5s;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  padding-left: 8rem;
+  background-color: hsl(0, 0%, 98%);
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5rem;
+}
+.hero-picture {
+  position: relative;
+  margin-top: -16rem;
+  width: 65%;
+  padding-left: 2rem;
+  overflow: hidden;
+}
+.mockup {
+  position: absolute;
+  top: 8rem;
+  right: 0;
+  margin-right: -8rem;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+h2 {
+  padding: 5rem 0 3rem;
+  font-size: 3rem;
+  font-weight: 300;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  padding-top: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  margin-bottom: -2rem;
+}
+p {
+  padding: 3rem 0;
+  font-weight: 300;
+}
+
+h4:hover,
+.about:hover,
+.support:hover,
+.logo-white:hover {
+  color: hsl(136, 71%, 36%);
+  transition: all 0.5s;
+}
+
+.links > a path:hover {
+  fill: hsl(136, 71%, 36%);
+  transition: all 0.5s;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3rem;
+}
+.advances {
+  margin-top: -5rem;
+}
+
+.advances,
+.articles {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8rem;
+}
+
+.card,
+.article {
+  margin: 1rem;
+  width: 25%;
+}
+.advances {
+  background-color: hsl(220, 16%, 96%);
+}
+.articles {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.article {
+  background-color: #fff;
+  overflow: hidden;
+}
+.pic {
+  max-height: 15rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.text {
+  padding: 2rem;
+}
+footer {
+  padding: 2rem 9rem;
+  background-color: hsl(233, 26%, 24%);
+  min-height: 15rem;
+  overflow-y: hidden;
+}
+
+.column {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: flex-start;
+}
+.fourth-column {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: flex-end;
+}
+ul > li {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 1rem;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+}
+.social {
+  padding: 2rem 0.5rem;
+}
+
+.attribution {
+  height: 2rem;
+  background-color: hsl(233, 26%, 24%);
+  color: lightskyblue;
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .hero-picture {
+    width: 100vw;
+    order: 1;
+  }
+  .mockup {
+    margin-right: 0;
+  }
+  .hero-text {
+    margin: 10rem auto;
+    width: 100%;
+    order: 2;
+  }
+  .wrapper {
+    width: 100vw;
+    height: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  /* Inserting this collapsed row between two flex items will make 
+ * the flex item that comes after it break to a new row 
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  } */
+  .card,
+  .article {
+    min-width: 40%;
+    flex-flow: column wrap;
+  }
+  .pic {
+    width: 100%;
+    height: 70%;
+  }
+  .column {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-picture {
+    padding-bottom: 10rem;
+  }
+  #top-button {
+    display: none;
+  }
+  .navigation {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+  }
+  .wrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .hero {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+  }
+  .background {
+    margin: 0 auto;
+    height: 150vh;
+  }
+  .mockup {
+    margin: 10vh auto 0;
+    width: 100vw;
+  }
+  .hero-text,
+  .advances,
+  .articles {
+    margin-top: 0;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .card,
+  .article {
+    min-width: 90%;
+    flex-flow: column wrap;
+  }
+  .pic {
+    width: 100%;
+    height: 70%;
+  }
+
+  footer {
+    padding: 2rem;
+    margin: 0;
+    width: 100%;
+  }
+  .btn-footer {
+    margin: 0 auto;
+  }
+  .about,
+  .support {
+    margin: 0.5rem auto;
+    justify-content: center;
+  }
+
+  .column,
+  .fourth-column,
+  .copyright {
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1rem;
+  }
+  .copyright {
+    margin: 2rem 0 1rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .background {
+    margin: 0 auto;
+    height: 100vh;
+  }
+  .hero-picture {
+    padding-bottom: 0;
+  }
+
+  .navigation {
+    justify-content: flex-start !important;
+    padding-left: 2rem;
+  }
+  /* MENU STYLES */
+  /* placing the menu on top of the picture */
+  .menu-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  /* formating the checkbox - hamburger icon */
+  .menu-wrap .toggler {
+    position: absolute;
+    display: block;
+    top: 0.5rem;
+    right: 1rem;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+
+  /* formating the square for the hamburger icon */
+  .menu-wrap .hamburger {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Hamburger Line */
+  .menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: hsl(230, 11%, 40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+
+  /* Hamburger Lines - Top & Bottom - they go on top first*/
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+
+  /* Moves one Line Down - to have three lines */
+  .menu-wrap .hamburger > div::after {
+    top: 10px;
+  }
+
+  /* Toggler Animation - rotate 135 degrees */
+  .menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+
+  /* Turns Lines Into X - targeting both lines - top and bottom*/
+  .menu-wrap .toggler:checked + .hamburger > div::before,
+  .menu-wrap .toggler:checked + .hamburger > div::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  /* Rotate On Hover When Checked */
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+
+  /* When clicked - blue overlay is visible */
+  .menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+  /* scaling out blue overlay */
+  .menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+  }
+  /* targeting the menu text - make it visible */
+  .menu-wrap .toggler:checked ~ .menu > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+  }
+  /* Moves Menu to the center of the screen */
+  .menu-wrap .menu {
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  /* Moves Menu to the center of the screen */
+  .gradient {
+    display: none;
+    z-index: -1;
+  }
+
+  .menu-wrap .toggler:checked ~ .gradient {
+    display: block;
+    position: relative;
+    z-index: 0;
+    top: 5rem;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(hsl(233, 26%, 24%), hsl(220, 16%, 96%));
+    opacity: 0.9;
+  }
+
+  /* first blue wave animation - show circle overlay */
+  .menu-wrap .menu > div {
+    background: hsl(207, 33%, 95%);
+    width: 80%;
+    height: 35%;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  .menu-wrap .menu > div > div {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+  }
+  .menu-wrap .menu > div > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* list items stiling */
+  .menu-wrap .menu > div > ul > li {
+    list-style: none;
+    color: hsl(230, 11%, 40%);
+    font-size: 1.5rem;
+    padding: 0.3rem;
+  }
+
+  /* links stiling - color: inherit - makes text white */
+  .menu-wrap .menu > div > ul > li > a {
+    padding: 0.5rem 0;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  }
+}
